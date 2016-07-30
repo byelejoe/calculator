@@ -1,11 +1,11 @@
 
-var btns=document.querySelectorAll("button");
+var btns=document.getElementsByTagName("button");
 var operators=["+","-","x","÷"];
 var decimal=false;
 
 for(var i=0;i<btns.length;i++){
 	btns[i].onclick=function(e){
-		var input=document.querySelector(".screen");
+		var input=document.getElementById("screen");
 		var inputVal=input.innerHTML;
 		var btnVal=this.innerHTML;
 	
